@@ -1,0 +1,165 @@
+body { 
+  font-family: 'Segoe UI', Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  background: #f8faf6; 
+  color: #253529; 
+} 
+header { 
+  background: #74b855; 
+  color: #fff; 
+  display: flex; 
+  align-items: center; 
+padding: 1em; 
+justify-content: space-between; 
+} 
+header h1 { 
+margin: 0; 
+font-size: 1.4em; 
+letter-spacing: 2px; 
+} 
+#language-switch { 
+font-size: 1em; 
+background: #fff; 
+color: #333; 
+border-radius: 6px; 
+border: none; 
+padding: 0.4em 1em; 
+} 
+main { 
+max-width: 680px; 
+margin: 2em auto; 
+padding: 1em; 
+background: #fff; 
+border-radius: 16px; 
+box-shadow: 0 2px 10px rgba(34,139,34,0.08); 
+} 
+.weather-soil { 
+display: flex; 
+gap: 2em; 
+margin-bottom: 2em; 
+flex-wrap: wrap; 
+} 
+.card { 
+flex: 1 1 200px; 
+background: #eff6e0; 
+border-radius: 12px; 
+padding: 1em 1.5em; 
+margin-bottom: 1em; 
+box-shadow: 0 1px 4px rgba(34,139,34,0.07); 
+} 
+.card h2 { 
+margin-top: 0; 
+color: #4e944f; 
+} 
+.recommendation-form { 
+margin-bottom: 2em; 
+} 
+.recommendation-form h2 { 
+margin-bottom: 0.4em; 
+color: #337a2f; 
+} 
+#crop-form { 
+display: flex; 
+flex-wrap: wrap; 
+gap: 1em; 
+margin-bottom: 1em; 
+} 
+#crop-form div { 
+flex: 1 1 180px; 
+display: flex; 
+flex-direction: column; 
+} 
+#crop-form label { 
+font-size: 0.98em; 
+margin-bottom: 0.3em; 
+} 
+#crop-form input { 
+padding: 0.5em; 
+border: 1px solid #a2dab8; 
+border-radius: 7px; 
+background: #f3ffe2; 
+font-size: 1em; 
+} 
+#crop-form button { 
+background: #337a2f; 
+color: #fff; 
+border: none; 
+padding: 0.7em 2.2em; 
+border-radius: 8px; 
+margin-top: 1em; 
+font-size: 1.09em; 
+cursor: pointer; 
+transition: background .2s; 
+} 
+#crop-form button:hover { 
+background: #74b855; 
+} 
+#recommendation-output { 
+font-size: 1.08em; 
+color: #2b7a29; 
+padding: 1em; 
+border: 1px solid #74b855; 
+background: #f6fff3; 
+border-radius: 7px; 
+margin-top: 0.6em; 
+min-height: 2.2em; 
+} 
+.ai-chat h2 { 
+color: #468232; 
+} 
+.chat-box { 
+display: flex; 
+flex-direction: column; 
+gap: 0.4em; 
+padding: 1em; 
+background: #eeffee; 
+border-radius: 10px; 
+margin-bottom: 1em; 
+} 
+#chat-history { 
+min-height: 3em; 
+background: #e0f2e9; 
+border-radius: 8px; 
+padding: 0.7em; 
+margin-bottom: 0.4em; 
+font-size: 0.97em; 
+} 
+#chat-input { 
+padding: 0.6em; 
+border-radius: 6px; 
+border: 1px solid #bbdfb2; 
+width: 80%; 
+} 
+#send-btn, #voice-btn { 
+margin-top: 0.8em; 
+background: #74b855; 
+color: #fff; 
+border: none; 
+border-radius: 6px; 
+padding: 0.5em 1.2em; 
+font-size: 1em; 
+cursor: pointer; 
+margin-right: 0.4em; 
+transition: background .2s; 
+} 
+#send-btn:hover, #voice-btn:hover { 
+background: #337a2f; 
+} 
+footer { 
+margin: 2em auto 0 auto; 
+text-align: center; 
+background: #e3fcce; 
+color: #337a2f; 
+padding: 1em 0; 
+border-top: 1px solid #74b855; 
+border-radius: 0 0 18px 18px; 
+} 
+#offline-status { 
+background: #fdd835; 
+padding: 0.2em 0.7em; 
+border-radius: 4px; 
+color: #333; 
+font-weight: bold; 
+margin-left: 0.5em; 
+}

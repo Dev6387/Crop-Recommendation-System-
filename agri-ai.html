@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Agriculture AI Decision Support</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="agri-ai.css"> 
+<script src="Hello.js" defer></script>
+</head> 
+<body> 
+<header> 
+<h1>    Agriculture AI Decision Support</h1> 
+<select id="language-switch"> 
+<option value="en">English</option> 
+<option value="hi">हिन्दी</option> 
+</select> 
+</header> 
+  <main> 
+    <section class="weather-soil"> 
+      <div class="card"> 
+        <h2>Weather Today</h2> 
+        <p><span id="weather-desc">Cloudy, 28°C</span></p> 
+        <p>Rainfall: <span id="rainfall">5mm</span></p> 
+        <p>Humidity: <span id="humidity">68%</span></p> 
+      </div> 
+      <div class="card"> 
+        <h2>Soil Stats</h2> 
+        <p>pH: <span id="soil-ph">6.3</span></p> 
+        <p>NPK: <span id="soil-npk">N: 48, P: 22, K: 18</span></p> 
+        <p>Moisture: <span id="soil-moisture">38%</span></p> 
+      </div> 
+    </section> 
+     
+    <section class="recommendation-form"> 
+      <h2>Crop Recommendation Form</h2> 
+      <form id="crop-form"> 
+        <div> 
+          <label for="district">District</label> 
+          <input type="text" id="district" name="district" required> 
+        </div> 
+        <div> 
+          <label for="soil-ph-input">Soil pH</label> 
+          <input type="number" step="0.1" id="soil-ph-input" name="ph" required> 
+        </div> 
+        <div> 
+          <label for="soil-n">Nitrogen (N)</label> 
+          <input type="number" id="soil-n" name="nitrogen" required> 
+        </div> 
+        <div> 
+          <label for="soil-p">Phosphorus (P)</label> 
+          <input type="number" id="soil-p" name="phosphorus" required> 
+        </div> 
+        <div> 
+          <label for="soil-k">Potassium (K)</label> 
+          <input type="number" id="soil-k" name="potassium" required> 
+        </div> 
+        <div> 
+          <label for="moisture">Soil Moisture (%)</label> 
+          <input type="number" step="0.1" id="moisture" name="moisture" required> 
+        </div> 
+        <button type="submit">Get AI Recommendation</button> 
+      </form> 
+      <div id="recommendation-output"></div> 
+    </section> 
+ 
+    <section class="ai-chat"> 
+      <h2>Ask the AI Assistant</h2> 
+      <div class="chat-box"> 
+        <div id="chat-history"></div> 
+        <input type="text" id="chat-input" placeholder="Type your question..."> 
+        <button id="send-btn">Send</button> 
+        <button id="voice-btn">         Voice Query</button> 
+      </div> 
+    </section> 
+  </main> 
+ 
+  <footer> 
+    <p>Powered by AI & Satellite Data | <span id="offline-status">Offline Mode</span></p> 
+  </footer> 
+</body> 
+</html>
